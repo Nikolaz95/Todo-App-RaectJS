@@ -1,0 +1,107 @@
+.taskTodo {
+  display: flex;
+    /* padding: 20px 0; */
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: white;
+    max-width: 900px;
+    margin: 20px auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .taskTodoHead {
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: space-between;
+  }
+
+  .count-todo {
+    background-color: #dfdfdf;
+    border-radius: 50%;
+    color: #ff0000;
+    margin-left: 10px;
+    padding: 5px 10px;
+  }
+
+  .clearAll {
+    color: rgb(255, 255, 255);
+    background-color: #ff0000;
+    border-radius: 10px;
+    border: none;
+    padding: 8px 8px;
+  }
+
+  .clearAll:hover {
+    background-color: #cd2424;
+  }
+
+  .clearAll:active {
+    transform: translateY(2px);
+  }
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+
+  li {
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 15px 10px;
+    border-left: 5px solid rgb(248, 209, 91);
+    box-shadow: 3px 4px 13px 0px rgb(236, 210, 65);
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+
+  .content-todoList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .butons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .btnupd {
+    padding: 5px;
+    border-style: none;
+  }
+
+  .btndone {
+    padding: 5px;
+    border-style: none;
+  }
+
+  .btndelete {
+    padding: 5px;
+    border-style: none;
+  }
+
+
+  
+
+
+  
