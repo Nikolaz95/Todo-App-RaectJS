@@ -6,9 +6,6 @@ import "../components/TaskFinish.css"
 
 
 //import icon
-import { FaPencil } from "react-icons/fa6";
-import { CiSaveDown2 } from "react-icons/ci";
-import { IoMdDoneAll } from "react-icons/io";
 import { RiDeleteBinFill } from "react-icons/ri";
 
 const TaskFinish = ({ finishedTasks, setFinishedTasks }) => {
