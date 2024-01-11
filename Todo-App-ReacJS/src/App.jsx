@@ -48,7 +48,7 @@ function App() {
   };
 
   return (
-    <div className="container">
+    <div >
       <Header />
       <TaskInput tasks={tasks} setTasks={setTasks} />
       <TaskTodoList tasks={tasks} setTasks={setTasks} handleTaskDone={handleTaskDone} />

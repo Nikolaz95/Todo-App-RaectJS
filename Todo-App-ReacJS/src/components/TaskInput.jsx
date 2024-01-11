@@ -3,6 +3,11 @@
 import React from 'react'
 import { useState } from 'react'
 
+//import icon
+import { IoMdAddCircle } from "react-icons/io";
+
+
+//import css
 import "../components/TaskInput.css"
 
 const TaskInput = ({ tasks, setTasks }) => {
@@ -35,14 +40,10 @@ const TaskInput = ({ tasks, setTasks }) => {
 
     return (
         <>
-            <div className="inputHeader">
-                <h1>Task input</h1>
-            </div>
-
             <div className="addTask">
                 <form onSubmit={handleSubmit}>
-                    <input onChange={handleChange} type="text" name='task' id='task' placeholder='Write your task to do ...' value={taskValue} />
-                    <button className='btnAdd' type='submit'>Add task</button>
+                    <input onChange={handleChange} type="text" name='task' id='task' placeholder='Write your task...' value={taskValue} />
+                    <button className='btnAdd' type='submit'>Add task <IoMdAddCircle className='add-logo' /></button>
                 </form>
             </div>
 

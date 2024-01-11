@@ -1,5 +1,16 @@
 import React, { useState } from 'react'
 
+//import icon
+import { FaPencil } from "react-icons/fa6";
+import { CiSaveDown2 } from "react-icons/ci";
+import { IoMdDoneAll } from "react-icons/io";
+import { RiDeleteBinFill } from "react-icons/ri";
+
+
+
+
+
+//import css
 import "../components/TaskTodoList.css"
 
 const TaskTodoList = ({ tasks, setTasks, handleTaskDone }) => {
@@ -48,7 +59,8 @@ const TaskTodoList = ({ tasks, setTasks, handleTaskDone }) => {
                     <span className='count-todo'>{tasks.length}</span>
                 </span>
 
-                <button onClick={handleClearAll} className='clearAll'>Clear All list</button>
+                <button onClick={handleClearAll} className='clearAll'>
+                    Clear All list <RiDeleteBinFill className='clearAll-logo' /></button>
             </div>
 
             <ul>
@@ -59,6 +71,7 @@ const TaskTodoList = ({ tasks, setTasks, handleTaskDone }) => {
                                 <input
                                     type="text"
                                     value={updatedTaskValue}
+                                    className='input-update'
                                     onChange={(e) => setUpdatedTaskValue(e.target.value)}
                                 />
                             ) : (
@@ -69,14 +82,18 @@ const TaskTodoList = ({ tasks, setTasks, handleTaskDone }) => {
 
                         <div className="butons">
                             {editableTaskId === task.id ? (
-                                <button onClick={() => handleSaveUpdate(task.id)}>Save</button>
+                                <button className="btnsave" onClick={() => handleSaveUpdate(task.id)}>
+                                    Save <CiSaveDown2 className='save-logo' />
+                                </button>
                             ) : (
                                 <button className="btnupd" onClick={() => handleToggleEdit(task.id)}>
-                                    Update
+                                    Update <FaPencil className='upd-logo' />
                                 </button>
                             )}
-                            <button onClick={() => handleDone(task.id)} className="btndone">Done</button>
-                            <button onClick={() => handleDelete(task.id)} className="btndelete">Delete</button>
+                            <button onClick={() => handleDone(task.id)} className="btndone">
+                                Done <IoMdDoneAll className='done-logo' /> </button>
+                            <button onClick={() => handleDelete(task.id)} className="btndelete">
+                                Delete<RiDeleteBinFill className='delete-logo' /></button>
                         </div>
                     </li>
                 ))}

@@ -1,6 +1,15 @@
 import React, { useEffect } from 'react'
 
+
+//import css
 import "../components/TaskFinish.css"
+
+
+//import icon
+import { FaPencil } from "react-icons/fa6";
+import { CiSaveDown2 } from "react-icons/ci";
+import { IoMdDoneAll } from "react-icons/io";
+import { RiDeleteBinFill } from "react-icons/ri";
 
 const TaskFinish = ({ finishedTasks, setFinishedTasks }) => {
 
@@ -23,7 +32,7 @@ const TaskFinish = ({ finishedTasks, setFinishedTasks }) => {
                     <span className='title-finishlist'>Finish List</span>
                     <span className='count-finish'>{finishedTasks ? finishedTasks.length : 0}</span>
                 </span>
-                <button onClick={handleClearAllFinished} className='clearAll'>Clear All list</button>
+                <button onClick={handleClearAllFinished} className='clearAll'>Clear All list <RiDeleteBinFill className='clearAll-logo' /></button>
             </div>
 
             <ul>
