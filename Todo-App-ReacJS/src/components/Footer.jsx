@@ -34,7 +34,7 @@ const Footer = () => {
                     <div className="addres">
                         <h1>Address:</h1>
                         <div className="addres-loc">
-                            <address>Stockholm, Sweden <a href="https://www.google.com/maps/place/Stockholm/@59.0968211,17.5065602,7.75z/data=!4m6!3m5!1s0x465f763119640bcb:0xa80d27d3679d7766!8m2!3d59.3293235!4d18.0685808!16zL20vMDZteHM?entry=ttu" target="_blank"> <GrMapLocation /></a></address>
+                            <address>Stockholm, Sweden zepce <a href="https://www.google.com/maps/place/Stockholm/@59.0968211,17.5065602,7.75z/data=!4m6!3m5!1s0x465f763119640bcb:0xa80d27d3679d7766!8m2!3d59.3293235!4d18.0685808!16zL20vMDZteHM?entry=ttu" target="_blank"> <GrMapLocation /></a></address>
                         </div>
                     </div>
                     <div className="copy-right">
