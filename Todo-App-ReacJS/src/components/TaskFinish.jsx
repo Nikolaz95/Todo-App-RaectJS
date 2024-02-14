@@ -15,6 +15,11 @@ const TaskFinish = ({ finishedTasks, setFinishedTasks }) => {
         setFinishedTasks([]);
     };
 
+    /* delete */
+    const handleDeleteFinish = (id) => {
+        setFinishedTasks(finishedTasks.filter(task => task.id !== id));
+    }
+
     useEffect(() => {
         // Update local storage when finishedTasks change
         localStorage.setItem('finishedTasks', JSON.stringify(finishedTasks));
@@ -39,6 +44,9 @@ const TaskFinish = ({ finishedTasks, setFinishedTasks }) => {
                             <p className="finish-name">{finishedTask.name}</p>
                             <p className="finish-time">{finishedTask.time}</p>
                         </div>
+                        <button onClick={() => handleDeleteFinish(finishedTask.id)} className="btndelete">
+                            Delete<RiDeleteBinFill className='delete-logo' />
+                        </button>
                     </li>
                 ))}
             </ul>
