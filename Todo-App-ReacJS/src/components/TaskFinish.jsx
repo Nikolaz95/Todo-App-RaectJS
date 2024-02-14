@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 
 
 //import css
-import "../components/TaskFinish.css"
+import "../components/TaskFInish.css"
 
 
 //import icon
